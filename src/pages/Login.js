@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router';
 import PropTypes from 'prop-types';
 import { sendLoginInfo } from '../actions';
+import wallet from '../images/wallet.png';
 
 class Login extends Component {
   constructor() {
@@ -50,30 +51,43 @@ class Login extends Component {
     const { email, senha, redirect } = this.state;
     if (redirect) return <Redirect to="/carteira" />;
     return (
-      <div>
-        <input
-          type="email"
-          name="email"
-          value={ email }
-          placeholder="e-mail"
-          data-testid="email-input"
-          onChange={ this.handleChange }
-        />
-        <input
-          type="password"
-          name="senha"
-          value={ senha }
-          placeholder="senha"
-          data-testid="password-input"
-          onChange={ this.handleChange }
-        />
-        <button
-          disabled={ this.enableButton() }
-          type="button"
-          onClick={ this.handleClick }
-        >
-          Entrar
-        </button>
+      <div class="wrapper fadeInDown">
+        <div id="formContent">
+
+          <div class="fadeIn first">
+            <img src={ wallet } id="icon" alt="User Icon" />
+          </div>
+
+          <form>
+          <input
+            type="email"
+            name="email"
+            value={ email }
+            placeholder="e-mail"
+            data-testid="email-input"
+            onChange={ this.handleChange }
+            className="fadeIn second login-input"
+          />
+          <input
+            type="password"
+            name="senha"
+            value={ senha }
+            placeholder="senha"
+            data-testid="password-input"
+            onChange={ this.handleChange }
+            className="fadeIn third login-input"
+          />
+          <button
+            disabled={ this.enableButton() }
+            type="button"
+            onClick={ this.handleClick }
+            className="fadeIn fourth login-button"
+          >
+            Entrar
+          </button>
+          </form>
+
+        </div>
       </div>
     );
   }
@@ -88,3 +102,29 @@ export default connect(null, mapDispatchToProps)(Login);
 Login.propTypes = {
   setLoginToStore: PropTypes.func.isRequired,
 };
+
+{/* <div>
+<input
+  type="email"
+  name="email"
+  value={ email }
+  placeholder="e-mail"
+  data-testid="email-input"
+  onChange={ this.handleChange }
+/>
+<input
+  type="password"
+  name="senha"
+  value={ senha }
+  placeholder="senha"
+  data-testid="password-input"
+  onChange={ this.handleChange }
+/>
+<button
+  disabled={ this.enableButton() }
+  type="button"
+  onClick={ this.handleClick }
+>
+  Entrar
+</button>
+</div> */}
