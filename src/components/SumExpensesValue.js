@@ -7,7 +7,7 @@ class SumExpensesValue extends Component {
     const { expenses } = this.props;
     return expenses.reduce((acc, curr) => {
       const { ask } = curr.exchangeRates[curr.currency];
-      return acc + parseFloat(curr.value * ask);
+      return `R$${Math.round(acc + parseFloat(curr.value * ask) * 100) / 100}`;
     }, 0);
   }
 

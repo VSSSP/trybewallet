@@ -8,7 +8,11 @@ export default class Wallet extends React.Component {
     return (
       <>
         <Header />
-        <div>TrybeWallet</div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <Form />
         <Table />
       </>
