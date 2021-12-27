@@ -8,17 +8,7 @@ class Header extends Component {
     const { getUserFromStore } = this.props;
     return (
       <div className="fixed-top header">
-        <header className="topbar">
-            <div className="container">
-              <div className="row">
-                <div className="col-sm-12">
-                  <ul className="social-network">
-                    <li><a className="waves-effect waves-dark" href="https://www.linkedin.com/in/victorssspaula/"><i className="fa fa-linkedin"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-        </header>
+
         <nav className="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
           <div className="container">
             <a className="navbar-brand" rel="nofollow" href="http://vsssp.github.io/trybewallet"> TrybeWallet </a>
@@ -29,11 +19,11 @@ class Header extends Component {
             <div className="collapse navbar-collapse total" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item total">
-                  <spam className="nav-link">Total (BRL):{ getUserFromStore }</spam>
+                  <spam className="nav-link">Usuario: { getUserFromStore }</spam>
                 </li>
                 <li className="nav-item">
                   <spam className="nav-link">
-                    <SumExpensesValue />
+                    Total: <SumExpensesValue />
                   </spam>
                 </li>
               </ul>

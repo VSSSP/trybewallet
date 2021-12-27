@@ -2,7 +2,7 @@
 /* GENERAL */
 
 a {
-  color: #92badd;
+  color: #36e226;
   display:inline-block;
   text-decoration: none;
   font-weight: 400;
@@ -36,7 +36,7 @@ h2 {
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
-  background: #fff;
+  background: rgb(255, 255, 255);
   padding: 30px;
   width: 90%;
   max-width: 450px;
@@ -66,7 +66,7 @@ h2.inactive {
 
 h2.active {
   color: #0d0d0d;
-  border-bottom: 2px solid #5fbae9;
+  border-bottom: 2px solid #6eeb3c;
 }
 
 
@@ -74,7 +74,7 @@ h2.active {
 /* FORM TYPOGRAPHY*/
 
 .login-button  {
-  background-color: #56baed;
+  background-color: #3ae250;
   border: none;
   color: white;
   padding: 15px 80px;
@@ -96,7 +96,7 @@ h2.active {
 }
 
 .login-button:hover  {
-  background-color: #39ace7;
+  background-color: #009b22;
 }
 
 .login-button:active  {
@@ -130,7 +130,7 @@ h2.active {
 
 .login-input:focus {
   background-color: #fff;
-  border-bottom: 2px solid #5fbae9;
+  border-bottom: 2px solid #16c525;
 }
 
 .login-input:placeholder {
@@ -228,7 +228,7 @@ h2.active {
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #56baed;
+  background-color: #1ec442;
   content: "";
   transition: width 0.2s;
 }
@@ -312,7 +312,7 @@ header .navbar {
 }
 
 .topbar li.topbar:hover {
-  color: #1bbde8;
+  color: #3de81b;
 }
 
 .topbar ul.info i {

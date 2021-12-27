@@ -9,14 +9,15 @@ class SumExpensesValue extends Component {
       const { ask } = curr.exchangeRates[curr.currency];
       let accumulator = acc + parseFloat(curr.value * ask);
       return Math.round(accumulator * 100) / 100;
+      // parseFloat(expense.value * ask).toFixed(2)
     }, 0);
   }
 
   render() {
     return (
-      <p data-testid="total-field">
-        { this.sumExpenses() }
-      </p>
+      <spam data-testid="total-field">
+        R$ { this.sumExpenses() }
+      </spam>
     );
   }
 }
