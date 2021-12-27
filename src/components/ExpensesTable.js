@@ -80,21 +80,3 @@ ExpensesTable.propTypes = {
   deleteExpenseFromStore: PropTypes.func.isRequired,
   editExpenseFromStore: PropTypes.func.isRequired,
 };
-
-{/* <button
-id={ expense.id }
-type="button"
-data-testid="delete-btn"
-onClick={ this.handleClick }
->
-Deletar
-</button>
-
-<button
-id={ expense.id }
-type="button"
-data-testid="edit-btn"
-onClick={ this.handleEditButtonClick }
->
-Editar
-</button> */}
