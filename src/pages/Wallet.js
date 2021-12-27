@@ -12,7 +12,6 @@ export default class Wallet extends React.Component {
         <br/>
         <br/>
         <br/>
-        <br/>
         <Form />
         <Table />
       </>

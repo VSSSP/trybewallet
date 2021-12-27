@@ -50,7 +50,7 @@ class Form extends Component {
 
   addExpenseButton() {
     return (
-      <button type="button" onClick={ this.handleClick }>
+      <button className="btn btn-form btn-outline-mdb-color m-0 px-3 py-2 z-depth-0 waves-effect" type="button" onClick={ this.handleClick }>
         Adicionar despesa
       </button>
     );
@@ -58,7 +58,7 @@ class Form extends Component {
 
   editExpenseButton() {
     return (
-      <button type="button" onClick={ this.handleEditExpenseButton }>
+      <button className="btn btn-form btn-md btn-outline-mdb-color m-3 px-3 py-2 z-depth-0 waves-effect" type="button" onClick={ this.handleEditExpenseButton }>
         Editar despesa
       </button>
     );
@@ -69,40 +69,48 @@ class Form extends Component {
     const tags = ['Alimentação', 'Lazer', 'Trabalho', 'Transporte', 'Saúde'];
     const { editing } = this.props;
     return (
-      <form>
-        <label htmlFor="valor">
-          Valor:
-          <input type="text" name="value" id="valor" onChange={ this.handleChange } />
-        </label>
+      <div className="">
+        <hr />
+          <form className="form form-font">
 
-        <label htmlFor="descricao">
-          Descrição:
-          <textarea name="description" id="descricao" onChange={ this.handleChange } />
-        </label>
+          <label className=""  htmlFor="valor">
+            <p>Valor:</p>
+            <input className="" type="text" name="value" id="valor" onChange={ this.handleChange } />
+          </label>
 
-        <label htmlFor="moeda">
-          Moeda:
-          <select id="moeda" onChange={ this.handleChange } name="currency">
-            <CurrenciesOptions />
-          </select>
-        </label>
+          <label htmlFor="descricao"> 
+            <p>Descrição:</p>
+            <textarea className="" name="description" id="descricao" onChange={ this.handleChange } />
+          </label>
+          
+          <label className="" htmlFor="moeda">
+              Moeda:
+            <select className="browser-default custom-select" id="inputGroupSelect01 moeda" onChange={ this.handleChange } name="currency">
+              <CurrenciesOptions />
+            </select>
+          </label>
 
-        <label htmlFor="método de pagamento">
-          Método de pagamento:
-          <select id="método de pagamento" onChange={ this.handleChange } name="method">
-            <PayOptions payMethods={ payMethods } />
-          </select>
-        </label>
+          <label htmlFor="método de pagamento">
+            Método de pagamento:
+            <select className="browser-default custom-select" id="inputGroupSelect01 método de pagamento" onChange={ this.handleChange } name="method">
+              <PayOptions payMethods={ payMethods } />
+            </select>
+          </label>
 
-        <label htmlFor="tag">
-          Tag:
-          <select id="tag" onChange={ this.handleChange } name="tag">
-            <OptionsTags tags={ tags } />
-          </select>
-        </label>
-        { editing ? this.editExpenseButton() : this.addExpenseButton() }
+          <label htmlFor="tag">
+            Tag:
+            <select className="browser-default custom-select" id="inputGroupSelect01 tag" onChange={ this.handleChange } name="tag">
+              <OptionsTags tags={ tags } />
+            </select>
+          </label>
 
-      </form>
+
+          </form>
+          <div className="input-group-append form-button">
+            { editing ? this.editExpenseButton() : this.addExpenseButton() }
+          </div>
+        <hr />
+      </div>
     );
   }
 }
