@@ -51,21 +51,11 @@ class ExpensesTable extends Component {
             <td>{this.currencyName(expense)}</td>
             <td>{this.convertedExpense(expense)}</td>
             <td>Real</td>
-            <button
-              id={ expense.id }
-              type="button"
-              data-testid="delete-btn"
-              onClick={ this.handleClick }
-            >
-              Deletar
+            <button type="button" rel="tooltip" class="btn btn-success btn-round btn-just-icon btn-sm" id={ expense.id } onClick={ this.handleEditButtonClick } >
+              <i class="material-icons">edit</i>
             </button>
-            <button
-              id={ expense.id }
-              type="button"
-              data-testid="edit-btn"
-              onClick={ this.handleEditButtonClick }
-            >
-              Editar
+            <button type="button" rel="tooltip" class="btn btn-danger btn-round btn-just-icon btn-sm" id={ expense.id } onClick={ this.handleClick }>
+              <i class="material-icons">close</i>
             </button>
           </tr>
         )) }
@@ -90,3 +80,21 @@ ExpensesTable.propTypes = {
   deleteExpenseFromStore: PropTypes.func.isRequired,
   editExpenseFromStore: PropTypes.func.isRequired,
 };
+
+{/* <button
+id={ expense.id }
+type="button"
+data-testid="delete-btn"
+onClick={ this.handleClick }
+>
+Deletar
+</button>
+
+<button
+id={ expense.id }
+type="button"
+data-testid="edit-btn"
+onClick={ this.handleEditButtonClick }
+>
+Editar
+</button> */}

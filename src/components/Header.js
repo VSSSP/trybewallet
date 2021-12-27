@@ -25,23 +25,20 @@ class Header extends Component {
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarResponsive">
 
+            <div className="collapse navbar-collapse total" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
-
-                <li className="nav-item">
-                  <spam className="nav-link">Total: { getUserFromStore }</spam>
+                <li className="nav-item total">
+                  <spam className="nav-link">Total (BRL):{ getUserFromStore }</spam>
                 </li>
-
                 <li className="nav-item">
-                  <spam className="nav-link" href="#">
+                  <spam className="nav-link">
                     <SumExpensesValue />
                   </spam>
                 </li>
-
-
               </ul>
             </div>
+
           </div>
         </nav>
       </div>
