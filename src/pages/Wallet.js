@@ -7,11 +7,14 @@ export default class Wallet extends React.Component {
   render() {
     return (
       <>
+        <h3 className="info">Momentaneamente indisponível para smartphones e telas pequenas</h3>
+        <div className="all">
         <Header />
         <br/>
         <br/>
         <Form />
         <Table />
+        </div>
       </>
     );
   }

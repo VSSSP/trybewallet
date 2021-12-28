@@ -74,12 +74,12 @@ class Form extends Component {
           <form className="form form-font">
 
           <label className=""  htmlFor="valor">
-            <p>Valor:</p>
+            <p id="value" >Valor:</p>
             <input className="" type="text" name="value" id="valor" onChange={ this.handleChange } />
           </label>
 
           <label htmlFor="descricao"> 
-            <p>Descrição:</p>
+            <p className="describe" >Descrição:</p>
             <textarea className="" name="description" id="descricao" onChange={ this.handleChange } />
           </label>
           

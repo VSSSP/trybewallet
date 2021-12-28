@@ -19,7 +19,7 @@ class Header extends Component {
             <div className="collapse navbar-collapse total" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item total">
-                  <spam className="nav-link">Usuario: { getUserFromStore }</spam>
+                  <spam className="nav-link user">Usuario: { getUserFromStore }</spam>
                 </li>
                 <li className="nav-item">
                   <spam className="nav-link">
