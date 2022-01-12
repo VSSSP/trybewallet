@@ -57,8 +57,6 @@ Se você quiser mais informações sobre a API, veja a [documentação](https://
 
 Crie uma página para que a pessoa usuária se identifique, com email e senha. Esta página deve ser a página inicial de seu aplicativo.
 
-  ![image](login.gif)
-
 #### 1. Crie uma página inicial de login com os seguintes campos e características:
 
   * A rota para esta página deve ser ‘/’.
@@ -106,8 +104,6 @@ Crie uma página para que a pessoa usuária se identifique, com email e senha. E
 ### Página da Carteira
 
 Crie uma página para gerenciar a carteira de gastos em diversas moedas, e que traga a despesa total em uma moeda só. Esta página deve ser renderizada por um componente chamado ***Wallet***.
-
-  ![image](carteira.gif)
 ---
 ### Configurando sua página
 
@@ -351,8 +347,6 @@ O que será testado:
 #### 10. Crie um botão para deletar uma despesa da tabela contendo as seguintes características:
 
 
-   ![image](btnExcluir.gif)
-
   * O botão deve estar na linha da tabela e deve possuir `data-testid="delete-btn"`.
 
   * Ao ser clicado, o botão deleta a linha da tabela, alterando o estado global.
@@ -367,7 +361,6 @@ O que será testado:
 
 #### 11. Crie um botão para editar uma despesa da tabela contendo as seguintes características:
 
-   ![image](btnEditar.gif)
 
   * O botão deve estar dentro da linha da tabela e deve possuir `data-testid="edit-btn"`
 
